@@ -1,8 +1,71 @@
 # Architectural-Pattern-Monolithic
+# 🏗️ Monolithic Architecture
 
 ## Pengantar
+**Monolithic Architecture** adalah pendekatan tradisional dalam membangun aplikasi di mana semua komponen aplikasi — seperti User Interface, Business Logic, dan Data Access — digabungkan menjadi satu unit kesatuan dalam satu source code dan satu proses deployment.
 
-Tutorial ini akan memandu Anda untuk membuat aplikasi monolitik menggunakan Spring Boot, berdasarkan Modul 11 Pemrograman Berorientasi Objek. Aplikasi ini akan terdiri dari dua layanan: User Service dan Product Service yang terintegrasi dalam satu codebase.
+---
+
+## 🧱 Karakteristik Utama
+
+- Semua komponen (frontend, backend, database access) menyatu dalam satu aplikasi.
+- Komunikasi antar komponen terjadi langsung dalam satu proses.
+- Satu source code dan satu proses deployment.
+- Jika satu bagian mengalami error, bisa memengaruhi keseluruhan sistem.
+
+---
+
+## 🌟 Kelebihan
+
+- ✅ Mudah dikembangkan untuk aplikasi kecil-menengah.
+- ✅ Deployment sederhana (cukup satu file atau container).
+- ✅ Komunikasi antar modul cepat dan efisien.
+- ✅ Cocok untuk MVP dan pengembangan cepat.
+
+---
+
+## ⚠️ Kekurangan
+
+- ❌ Sulit diskalakan seiring pertumbuhan aplikasi.
+- ❌ Perubahan kecil memerlukan deploy ulang seluruh aplikasi.
+- ❌ Sulit dikelola jika source code membengkak.
+- ❌ Jika satu modul error, seluruh sistem bisa ikut gagal.
+
+---
+
+## 🏠 Analogi: Rumah Konvensional
+
+Bayangkan sebuah rumah satu lantai besar yang berisi:
+- Dapur
+- Kamar mandi
+- Kamar tidur
+- Ruang tamu
+
+Semua berada dalam satu struktur. Jika ada kerusakan di satu ruangan (misalnya pipa bocor di kamar mandi), maka bisa berdampak ke keseluruhan rumah.
+
+> Sama halnya dengan Monolithic Architecture — satu kesalahan dalam modul bisa membuat seluruh aplikasi bermasalah.
+
+---
+
+## 💼 Real Case: Aplikasi E-Commerce Monolitik
+
+### 🔹 Studi Kasus: Amazon (awal pengembangan)
+- Seluruh fitur seperti katalog, cart, pembayaran, dan pengiriman dibangun sebagai satu aplikasi monolitik.
+- Semua tim bekerja di satu codebase besar.
+- Update fitur kecil tetap butuh redeploy seluruh sistem.
+
+### 🔄 Solusi:
+Amazon akhirnya memigrasikan sistem ke **microservices** untuk mengatasi tantangan skalabilitas dan pengembangan paralel.
+
+---
+
+## 🧪 Contoh Implementasi: Spring Boot Monolith
+Aplikasi sederhana `monolithic-app` dengan dua service:
+- `UserService` dan `ProductService`
+- Menggunakan: Spring Boot, Spring Data JPA, MySQL
+
+Struktur dasar:
+
 
 ## Prasyarat
 
