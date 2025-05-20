@@ -69,7 +69,7 @@ Struktur dasar:
 
 ## Prasyarat
 
-- Java Development Kit (JDK) 17 atau yang lebih baru
+- Java Development Kit (JDK) 21 atau yang lebih baru
 - Eclipse IDE (atau IDE lain yang mendukung Spring Boot)
 - MySQL Database
 - Postman (untuk pengujian API)
